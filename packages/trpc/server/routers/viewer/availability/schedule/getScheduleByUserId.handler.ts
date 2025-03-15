@@ -46,7 +46,7 @@ export const getScheduleByUserIdHandler = async ({ ctx, input }: GetOptions) => 
       name: "Working Hourse",
       availability: EMPTY_SCHEDULE,
       dateOverrides: [],
-      timeZone: ctx.user.timeZone || "Europe/London",
+      timeZone: ctx.user.timeZone || "Asia/Seoul",
       workingHours: [],
       isDefault: true,
       hasDefaultSchedule: false, // This is the path that we take if the user has not completed onboarding

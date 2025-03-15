@@ -31,7 +31,7 @@ import { test } from "@calcom/web/test/fixtures/fixtures";
 
 export const Timezones = {
   "-05:00": "America/New_York",
-  "00:00": "Europe/London",
+  "00:00": "Asia/Seoul",
 };
 
 export type CustomNextApiRequest = NextApiRequest & Request;

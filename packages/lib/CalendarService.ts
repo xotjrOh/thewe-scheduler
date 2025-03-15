@@ -321,7 +321,7 @@ export default abstract class BaseCalendarService implements Calendar {
    * getUserTimezoneFromDB() retrieves the timezone of a user from the database.
    *
    * @param {number} id - The user's unique identifier.
-   * @returns {Promise<string | undefined>} - A Promise that resolves to the user's timezone or "Europe/London" as a default value if the timezone is not found.
+   * @returns {Promise<string | undefined>} - A Promise that resolves to the user's timezone or "Asia/Seoul" as a default value if the timezone is not found.
    */
   getUserTimezoneFromDB = async (id: number): Promise<string | undefined> => {
     const prisma = await import("@calcom/prisma").then((mod) => mod.default);
@@ -375,7 +375,7 @@ export default abstract class BaseCalendarService implements Calendar {
 
     const userId = this.getUserId(selectedCalendars);
     // we use the userId from selectedCalendars to fetch the user's timeZone from the database primarily for all-day events without any timezone information
-    const userTimeZone = userId ? await this.getUserTimezoneFromDB(userId) : "Europe/London";
+    const userTimeZone = userId ? await this.getUserTimezoneFromDB(userId) : "Asia/Seoul";
     const events: { start: string; end: string }[] = [];
     objects.forEach((object) => {
       if (!object || object.data == null || JSON.stringify(object.data) == "{}") return;

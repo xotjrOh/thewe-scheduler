@@ -28,14 +28,14 @@ export const testTriggerHandler = async ({ ctx: _ctx, input }: TestTriggerOption
       {
         email: "jdoe@example.com",
         name: "John Doe",
-        timeZone: "Europe/London",
+        timeZone: "Asia/Seoul",
         language,
       },
     ],
     organizer: {
       name: "Cal",
       email: "no-reply@cal.com",
-      timeZone: "Europe/London",
+      timeZone: "Asia/Seoul",
       language,
     },
   };

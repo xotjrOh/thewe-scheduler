@@ -445,7 +445,7 @@ export const getPublicEvent = async (
     showInstantEventConnectNowModal = await isCurrentlyAvailable({
       prisma,
       instantMeetingScheduleId: id,
-      availabilityTimezone: timeZone ?? "Europe/London",
+      availabilityTimezone: timeZone ?? "Asia/Seoul",
       length: eventWithUserProfiles.length,
     });
   }

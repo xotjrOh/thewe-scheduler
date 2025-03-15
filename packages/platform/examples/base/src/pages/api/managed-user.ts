@@ -202,7 +202,7 @@ async function createCollectiveEventType(orgId: number, teamId: number, userIds:
 
 async function createDefaultSchedule(accessToken: string) {
   const name = "Default Schedule";
-  const timeZone = "Europe/London";
+  const timeZone = "Asia/Seoul";
   const isDefault = true;
 
   const response = await fetch(

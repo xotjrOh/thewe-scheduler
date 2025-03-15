@@ -287,20 +287,20 @@ describe("Tests the slot logic", () => {
 
   it("tests slots for 5 minute events", async () => {
     const slots = getSlots({
-      inviteeDate: dayjs.tz("2023-07-13T00:00:00.000+05:30", "Europe/London"),
+      inviteeDate: dayjs.tz("2023-07-13T00:00:00.000+05:30", "Asia/Seoul"),
       frequency: 5,
       minimumBookingNotice: 0,
       eventLength: 5,
       dateRanges: [
         // fits 1 slot
         {
-          start: dayjs.tz("2023-07-13T07:00:00.000", "Europe/London"),
-          end: dayjs.tz("2023-07-13T07:05:00.000", "Europe/London"),
+          start: dayjs.tz("2023-07-13T07:00:00.000", "Asia/Seoul"),
+          end: dayjs.tz("2023-07-13T07:05:00.000", "Asia/Seoul"),
         },
         // fits 4 slots
         {
-          start: dayjs.tz("2023-07-13T07:10:00.000", "Europe/London"),
-          end: dayjs.tz("2023-07-13T07:30:00.000", "Europe/London"),
+          start: dayjs.tz("2023-07-13T07:10:00.000", "Asia/Seoul"),
+          end: dayjs.tz("2023-07-13T07:30:00.000", "Asia/Seoul"),
         },
       ],
     });

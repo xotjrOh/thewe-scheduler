@@ -151,7 +151,7 @@ export async function createUserAndEventType({
             create: {
               email: user.email,
               name: user.name,
-              timeZone: "Europe/London",
+              timeZone: "Asia/Seoul",
             },
           },
           eventType: {

@@ -6,7 +6,7 @@ export const userSchemaResponse = z.object({
   timeFormat: z.number().int().default(12),
   defaultScheduleId: z.number().int().nullable(),
   weekStart: z.string(),
-  timeZone: z.string().default("Europe/London"),
+  timeZone: z.string().default("Asia/Seoul"),
   username: z.string(),
   organizationId: z.number().nullable(),
   organization: z.object({ isPlatform: z.boolean(), id: z.number() }).optional(),

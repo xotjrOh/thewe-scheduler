@@ -129,8 +129,8 @@ export class TeamOutputDto {
   @IsOptional()
   @IsString()
   @Expose()
-  @ApiPropertyOptional({ type: String, default: "Europe/London" })
-  readonly timeZone?: string = "Europe/London";
+  @ApiPropertyOptional({ type: String, default: "Asia/Seoul" })
+  readonly timeZone?: string = "Asia/Seoul";
 
   @IsOptional()
   @IsString()

@@ -26,7 +26,7 @@ describe("isCurrentlyAvailable", () => {
     const result = await isCurrentlyAvailable({
       prisma,
       instantMeetingScheduleId: 1,
-      availabilityTimezone: "Europe/London",
+      availabilityTimezone: "Asia/Seoul",
       length: 30,
     });
 
@@ -49,7 +49,7 @@ describe("isCurrentlyAvailable", () => {
     const result = await isCurrentlyAvailable({
       prisma,
       instantMeetingScheduleId: 1,
-      availabilityTimezone: "Europe/London",
+      availabilityTimezone: "Asia/Seoul",
       length: 30,
     });
 
@@ -72,7 +72,7 @@ describe("isCurrentlyAvailable", () => {
     const result = await isCurrentlyAvailable({
       prisma,
       instantMeetingScheduleId: 1,
-      availabilityTimezone: "Europe/London",
+      availabilityTimezone: "Asia/Seoul",
       length: 30,
     });
 
@@ -95,7 +95,7 @@ describe("isCurrentlyAvailable", () => {
     const result = await isCurrentlyAvailable({
       prisma,
       instantMeetingScheduleId: 1,
-      availabilityTimezone: "Europe/London",
+      availabilityTimezone: "Asia/Seoul",
       length: 60,
     });
 
@@ -125,7 +125,7 @@ describe("isCurrentlyAvailable", () => {
     const result = await isCurrentlyAvailable({
       prisma,
       instantMeetingScheduleId: 1,
-      availabilityTimezone: "Europe/London",
+      availabilityTimezone: "Asia/Seoul",
       length: 30,
     });
 

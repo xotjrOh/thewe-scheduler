@@ -37,7 +37,7 @@ describe("processWorkingHours", () => {
       endTime: new Date(Date.UTC(2023, 5, 12, 17, 0)), // 5 PM
     };
 
-    const timeZone = "Europe/London";
+    const timeZone = "Asia/Seoul";
 
     const dateFrom = dayjs().month(9).date(24); // starts before DST change
     const dateTo = dayjs().startOf("day").month(10).date(1); // first day of November
@@ -428,7 +428,7 @@ describe("buildDateRanges", () => {
         endTime: new Date(Date.UTC(2023, 5, 12, 17, 0)),
       },
     ];
-    const timeZone = "Europe/London";
+    const timeZone = "Asia/Seoul";
 
     const dateFrom = dayjs("2023-06-13T00:00:00Z");
     const dateTo = dayjs("2023-06-15T00:00:00Z");
@@ -455,7 +455,7 @@ describe("buildDateRanges", () => {
         endTime: new Date(Date.UTC(0, 0, 0, 14, 0)),
       },
     ];
-    const timeZone = "Europe/London";
+    const timeZone = "Asia/Seoul";
 
     const dateFrom = dayjs("2023-06-13T10:00:00Z");
     const dateTo = dayjs("2023-06-13T10:30:00Z");

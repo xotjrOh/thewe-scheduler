@@ -1003,7 +1003,7 @@ describe("handleNewBooking", () => {
                         name: organizer.name,
                         email: organizer.email,
                         locale: "en",
-                        timeZone: "Europe/London",
+                        timeZone: "Asia/Seoul",
                       }),
                       getMockBookingAttendee({
                         id: 2,
@@ -1043,7 +1043,7 @@ describe("handleNewBooking", () => {
                 start: `${plus1DateString}T04:00:00.000Z`,
                 end: `${plus1DateString}T04:15:00.000Z`,
                 // Organizer is doing the rescheduling from his timezone which is different from Booker Timezone as per the booking being rescheduled
-                timeZone: "Europe/London",
+                timeZone: "Asia/Seoul",
                 responses: {
                   email: booker.email,
                   name: booker.name,
@@ -1260,7 +1260,7 @@ describe("handleNewBooking", () => {
                         name: organizer.name,
                         email: organizer.email,
                         locale: "en",
-                        timeZone: "Europe/London",
+                        timeZone: "Asia/Seoul",
                       }),
                       getMockBookingAttendee({
                         id: 2,
@@ -1296,7 +1296,7 @@ describe("handleNewBooking", () => {
                 start: `${plus1DateString}T04:00:00.000Z`,
                 end: `${plus1DateString}T04:15:00.000Z`,
                 // Organizer is doing the rescheduling from his timezone which is different from Booker Timezone as per the booking being rescheduled
-                timeZone: "Europe/London",
+                timeZone: "Asia/Seoul",
                 responses: {
                   email: booker.email,
                   name: booker.name,
@@ -1713,7 +1713,7 @@ describe("handleNewBooking", () => {
                         name: organizer.name,
                         email: organizer.email,
                         locale: "en",
-                        timeZone: "Europe/London",
+                        timeZone: "Asia/Seoul",
                       }),
                       getMockBookingAttendee({
                         id: 2,
@@ -1735,7 +1735,7 @@ describe("handleNewBooking", () => {
                     email: "",
                     schedules: [TestData.schedules.IstWorkHours],
                     username: "prev-organizer",
-                    timeZone: "Europe/London",
+                    timeZone: "Asia/Seoul",
                   },
                 ],
                 apps: [TestData.apps["google-calendar"], TestData.apps["daily-video"]],
@@ -1763,7 +1763,7 @@ describe("handleNewBooking", () => {
                 start: `${plus1DateString}T04:00:00.000Z`,
                 end: `${plus1DateString}T04:15:00.000Z`,
                 // Organizer is doing the rescheduling from his timezone which is different from Booker Timezone as per the booking being rescheduled
-                timeZone: "Europe/London",
+                timeZone: "Asia/Seoul",
                 responses: {
                   email: booker.email,
                   name: booker.name,

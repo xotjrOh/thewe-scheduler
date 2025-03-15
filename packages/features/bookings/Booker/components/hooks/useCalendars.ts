@@ -39,7 +39,7 @@ export const useCalendars = ({ hasSession }: UseCalendarsProps) => {
 
   const { data: overlayBusyDates, isError } = trpc.viewer.availability.calendarOverlay.useQuery(
     {
-      loggedInUsersTz: timezone || "Europe/London",
+      loggedInUsersTz: timezone || "Asia/Seoul",
       dateFrom: selectedDate,
       dateTo: selectedDate,
       calendarsToLoad: Array.from(set).map((item) => ({

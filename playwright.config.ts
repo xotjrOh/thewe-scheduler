@@ -59,7 +59,7 @@ if (IS_EMBED_REACT_TEST) {
 
 const DEFAULT_CHROMIUM: NonNullable<PlaywrightTestConfig["projects"]>[number]["use"] = {
   ...devices["Desktop Chrome"],
-  timezoneId: "Europe/London",
+  timezoneId: "Asia/Seoul",
   storageState: {
     cookies: [
       {

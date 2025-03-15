@@ -208,7 +208,7 @@ export const useBookings = ({ event, hashedLink, bookingForm, metadata, teamMemb
           organizer: {
             name: users?.[0]?.name || "Nameless",
             email: booking?.userPrimaryEmail || booking.user?.email || "Email-less",
-            timeZone: booking.user?.timeZone || "Europe/London",
+            timeZone: booking.user?.timeZone || "Asia/Seoul",
           },
           confirmed: !(booking.status === BookingStatus.PENDING && event.data?.requiresConfirmation),
         });
@@ -228,7 +228,7 @@ export const useBookings = ({ event, hashedLink, bookingForm, metadata, teamMemb
           organizer: {
             name: users?.[0]?.name || "Nameless",
             email: booking?.userPrimaryEmail || booking.user?.email || "Email-less",
-            timeZone: booking.user?.timeZone || "Europe/London",
+            timeZone: booking.user?.timeZone || "Asia/Seoul",
           },
           confirmed: !(booking.status === BookingStatus.PENDING && event.data?.requiresConfirmation),
         });

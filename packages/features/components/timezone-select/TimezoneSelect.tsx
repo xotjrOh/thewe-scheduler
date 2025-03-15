@@ -23,7 +23,7 @@ const SELECT_SEARCH_DATA: Timezones = [
   { label: "Atlantic Time - Canada", timezone: "America/Halifax" },
   { label: "Eastern European Time", timezone: "Europe/Bucharest" },
   { label: "Central European Time", timezone: "Europe/Berlin" },
-  { label: "Western European Time", timezone: "Europe/London" },
+  { label: "Western European Time", timezone: "Asia/Seoul" },
   { label: "Australian Eastern Time", timezone: "Australia/Sydney" },
   { label: "Japan Standard Time", timezone: "Asia/Tokyo" },
   { label: "India Standard Time", timezone: "Asia/Kolkata" },
